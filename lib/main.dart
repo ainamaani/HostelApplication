@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       child: StreamProvider<Userr>.value(
         value: AuthService().user,
         child: MaterialApp(
-          title: 'proj',
+          title: 'HostelApp',
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
@@ -50,8 +50,8 @@ class MyApp extends StatelessWidget {
             '/login': (context) => Login(),
             '/locationscreen': (context) => LocationScreen(),
             '/register': (context) => Register(),
-            '/hosteldetails': (context) => HostelDetails(),
-            '/': (context) => WelcomePage(),
+            '/': (context) => HostelDetails(),
+            '/welcomepage': (context) => WelcomePage(),
             '/welcome': (context) => Welcome(),
             '/hostels': (context) => Hostels(),
             '/wrapper': (context) => Wrapper(),

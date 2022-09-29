@@ -15,6 +15,7 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   final AuthService _auth = AuthService();
   final _formKey = GlobalKey<FormState>();
+  bool loading = false;
   //textfield state
   String email = '';
   String password = '';
@@ -65,7 +66,7 @@ class _LoginState extends State<Login> {
                     ),
                     Center(
                       child: Text(
-                        'Welcome to proj',
+                        'Welcome to the HostelApp',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
@@ -77,115 +78,134 @@ class _LoginState extends State<Login> {
               ),
             ),
             Expanded(
-                child: Container(
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(60),
-                    topRight: Radius.circular(60),
-                  )),
-              child: Padding(
-                padding: EdgeInsets.all(30),
-                child: Column(
-                  children: <Widget>[
-                    SizedBox(
-                      height: 40,
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                                border: Border(
-                                    bottom:
-                                        BorderSide(color: Colors.grey[200]))),
-                            child: Form(
-                              key: _formKey,
-                              child: Column(children: [
-                                TextFormField(
-                                  validator: (val) =>
-                                      val.isEmpty ? 'Enter an email' : null,
-                                  onChanged: (val) {
-                                    setState(() => email = val);
-                                  },
-                                  decoration: InputDecoration(
-                                      hintText: 'Enter your email',
-                                      hintStyle: TextStyle(color: Colors.grey),
-                                      border: InputBorder.none),
-                                ),
-                                SizedBox(
-                                  height: 10.0,
-                                ),
-                                TextFormField(
-                                  validator: (val) => val.length < 6
-                                      ? 'Enter a password 6+ chars long'
-                                      : null,
-                                  obscureText: true,
-                                  onChanged: (val) {
-                                    setState(() => password = val);
-                                  },
-                                  decoration: InputDecoration(
-                                      hintText: 'Enter your password',
-                                      hintStyle: TextStyle(color: Colors.grey),
-                                      border: InputBorder.none),
-                                ),
-                              ]),
+                child: SingleChildScrollView(
+              child: Container(
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(60),
+                      topRight: Radius.circular(60),
+                    )),
+                child: Padding(
+                  padding: EdgeInsets.all(30),
+                  child: Column(
+                    children: <Widget>[
+                      SizedBox(
+                        height: 40,
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10)),
+                        child: Column(
+                          children: <Widget>[
+                            Container(
+                              padding: EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                  border: Border(
+                                      bottom:
+                                          BorderSide(color: Colors.grey[200]))),
+                              child: Form(
+                                key: _formKey,
+                                child: Column(children: [
+                                  TextFormField(
+                                    validator: (val) =>
+                                        val.isEmpty ? 'Enter an email' : null,
+                                    onChanged: (val) {
+                                      setState(() => email = val);
+                                    },
+                                    decoration: InputDecoration(
+                                        hintText: 'Enter your email',
+                                        hintStyle:
+                                            TextStyle(color: Colors.grey),
+                                        labelText: 'Email',
+                                        floatingLabelBehavior:
+                                            FloatingLabelBehavior.always,
+                                        border: OutlineInputBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(20),
+                                            borderSide: BorderSide(
+                                                color: Colors.blue))),
+                                  ),
+                                  SizedBox(
+                                    height: 40.0,
+                                  ),
+                                  TextFormField(
+                                    validator: (val) => val.length < 6
+                                        ? 'Enter a password 6+ chars long'
+                                        : null,
+                                    obscureText: true,
+                                    onChanged: (val) {
+                                      setState(() => password = val);
+                                    },
+                                    decoration: InputDecoration(
+                                        hintText: 'Enter your password',
+                                        hintStyle:
+                                            TextStyle(color: Colors.grey),
+                                        labelText: 'Password',
+                                        floatingLabelBehavior:
+                                            FloatingLabelBehavior.always,
+                                        border: OutlineInputBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(20),
+                                            borderSide: BorderSide(
+                                                color: Colors.blue))),
+                                  ),
+                                ]),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 40,
+                      ),
+                      Text(
+                        'Forgot Password',
+                        style: TextStyle(color: Colors.grey),
+                      ),
+                      SizedBox(
+                        height: 40,
+                      ),
+                      GestureDetector(
+                        child: Container(
+                          height: 50,
+                          margin: EdgeInsets.symmetric(horizontal: 50),
+                          decoration: BoxDecoration(
+                            color: Colors.cyan[500],
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Center(
+                            child: Text(
+                              'Login',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      height: 40,
-                    ),
-                    Text(
-                      'Forgot Password',
-                      style: TextStyle(color: Colors.grey),
-                    ),
-                    SizedBox(
-                      height: 40,
-                    ),
-                    GestureDetector(
-                      child: Container(
-                        height: 50,
-                        margin: EdgeInsets.symmetric(horizontal: 50),
-                        decoration: BoxDecoration(
-                          color: Colors.cyan[500],
-                          borderRadius: BorderRadius.circular(10),
                         ),
-                        child: Center(
-                          child: Text(
-                            'Login',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                      ),
-                      onTap: (() async {
-                        if (_formKey.currentState.validate()) {
-                          dynamic result = await _auth
-                              .signInWithEmailAndPassword(email, password);
-                          if (result == null) {
-                            setState(() => error =
-                                'Couldnt sign in with those credentials');
+                        onTap: (() async {
+                          if (_formKey.currentState.validate()) {
+                            setState(() => loading = true);
+                            dynamic result = await _auth
+                                .signInWithEmailAndPassword(email, password);
+                            if (result == null) {
+                              setState(() => error =
+                                  'Couldnt sign in with those credentials');
+                            }
                           }
-                        }
-                      }),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
-                      error,
-                      style: TextStyle(color: Colors.red, fontSize: 14.0),
-                    )
-                  ],
+                        }),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        error,
+                        style: TextStyle(color: Colors.red, fontSize: 14.0),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ))

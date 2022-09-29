@@ -68,7 +68,7 @@ class _HostelDetailsState extends State<HostelDetails> {
     return Scaffold(
       resizeToAvoidBottomInset: true,
       appBar: AppBar(
-        title: Text('HOSTEL DETAILSS'),
+        title: Text('HOSTEL DETAILS'),
         centerTitle: true,
         actions: <Widget>[
           ElevatedButton.icon(
@@ -101,19 +101,19 @@ class _HostelDetailsState extends State<HostelDetails> {
                   children: <Widget>[
                     Center(
                       child: Text(
-                        'Hostel detailss',
+                        'Hostel details',
                         style: TextStyle(color: Colors.white, fontSize: 40),
                       ),
                     ),
                     SizedBox(
-                      height: 10.1,
+                      height: 10,
                     ),
                     Center(
                       child: Text(
-                        'Welcome to proj',
+                        'HostelApp',
                         style: TextStyle(
-                          color: Color.fromARGB(255, 201, 187, 187),
-                          fontSize: 18.1,
+                          color: Colors.white,
+                          fontSize: 18,
                         ),
                       ),
                     )
@@ -152,7 +152,13 @@ class _HostelDetailsState extends State<HostelDetails> {
                                 decoration: InputDecoration(
                                     hintText: 'Name of the hostel',
                                     hintStyle: TextStyle(color: Colors.grey),
-                                    border: InputBorder.none),
+                                    labelText: 'Hostel',
+                                    floatingLabelBehavior:
+                                        FloatingLabelBehavior.always,
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue))),
                                 onChanged: ((value) {
                                   hostelProvider.changeHostelname(value);
                                 }),
@@ -169,7 +175,13 @@ class _HostelDetailsState extends State<HostelDetails> {
                                 decoration: InputDecoration(
                                     hintText: 'No. of single rooms available',
                                     hintStyle: TextStyle(color: Colors.grey),
-                                    border: InputBorder.none),
+                                    labelText: 'Single rooms available',
+                                    floatingLabelBehavior:
+                                        FloatingLabelBehavior.always,
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue))),
                                 onChanged: (value) {
                                   hostelProvider.changeSinglerooms(value);
                                 },
@@ -186,7 +198,13 @@ class _HostelDetailsState extends State<HostelDetails> {
                                 decoration: InputDecoration(
                                     hintText: 'Price of a single room',
                                     hintStyle: TextStyle(color: Colors.grey),
-                                    border: InputBorder.none),
+                                    labelText: 'Price per single room',
+                                    floatingLabelBehavior:
+                                        FloatingLabelBehavior.always,
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue))),
                                 onChanged: (value) {
                                   hostelProvider.changePricesingleroom(value);
                                 },
@@ -203,7 +221,13 @@ class _HostelDetailsState extends State<HostelDetails> {
                                 decoration: InputDecoration(
                                     hintText: 'Booking fee for a single room',
                                     hintStyle: TextStyle(color: Colors.grey),
-                                    border: InputBorder.none),
+                                    labelText: 'Booking fee per single room',
+                                    floatingLabelBehavior:
+                                        FloatingLabelBehavior.always,
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue))),
                                 onChanged: (value) {
                                   hostelProvider.changeBookingfeesingle(value);
                                 },
@@ -220,7 +244,13 @@ class _HostelDetailsState extends State<HostelDetails> {
                                 decoration: InputDecoration(
                                     hintText: 'No. of double rooms available',
                                     hintStyle: TextStyle(color: Colors.grey),
-                                    border: InputBorder.none),
+                                    labelText: 'Double rooms available',
+                                    floatingLabelBehavior:
+                                        FloatingLabelBehavior.always,
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue))),
                                 onChanged: (value) {
                                   hostelProvider.changeDoublerooms(value);
                                 },
@@ -237,7 +267,13 @@ class _HostelDetailsState extends State<HostelDetails> {
                                 decoration: InputDecoration(
                                     hintText: 'Price for a double room',
                                     hintStyle: TextStyle(color: Colors.grey),
-                                    border: InputBorder.none),
+                                    labelText: 'Price per double room',
+                                    floatingLabelBehavior:
+                                        FloatingLabelBehavior.always,
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue))),
                                 onChanged: (value) {
                                   hostelProvider.changePricedoubleroom(value);
                                 },
@@ -254,7 +290,13 @@ class _HostelDetailsState extends State<HostelDetails> {
                                 decoration: InputDecoration(
                                     hintText: 'Booking fee for a double room',
                                     hintStyle: TextStyle(color: Colors.grey),
-                                    border: InputBorder.none),
+                                    labelText: 'Booking fee per double',
+                                    floatingLabelBehavior:
+                                        FloatingLabelBehavior.always,
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue))),
                                 onChanged: (value) {
                                   hostelProvider.changeBookingfeedouble(value);
                                 },
@@ -271,7 +313,13 @@ class _HostelDetailsState extends State<HostelDetails> {
                                 decoration: InputDecoration(
                                     hintText: 'Services offered at the hostel',
                                     hintStyle: TextStyle(color: Colors.grey),
-                                    border: InputBorder.none),
+                                    labelText: 'Services',
+                                    floatingLabelBehavior:
+                                        FloatingLabelBehavior.always,
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue))),
                                 onChanged: (value) {
                                   hostelProvider.changeServicesoffered(value);
                                 },
@@ -288,7 +336,13 @@ class _HostelDetailsState extends State<HostelDetails> {
                                 decoration: InputDecoration(
                                     hintText: 'Phone contacts of the custodian',
                                     hintStyle: TextStyle(color: Colors.grey),
-                                    border: InputBorder.none),
+                                    labelText: "Custodian's contacts",
+                                    floatingLabelBehavior:
+                                        FloatingLabelBehavior.always,
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue))),
                                 onChanged: (value) {
                                   hostelProvider.changeContacts(value);
                                 },

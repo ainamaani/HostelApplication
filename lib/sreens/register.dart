@@ -66,7 +66,7 @@ class _RegisterState extends State<Register> {
                     ),
                     Center(
                       child: Text(
-                        'Welcome to projj',
+                        'Welcome to HostelApp',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
@@ -115,10 +115,17 @@ class _RegisterState extends State<Register> {
                                             hintText: 'Name of the hostel',
                                             hintStyle:
                                                 TextStyle(color: Colors.grey),
-                                            border: InputBorder.none),
+                                            labelText: 'Hostel',
+                                            floatingLabelBehavior:
+                                                FloatingLabelBehavior.always,
+                                            border: OutlineInputBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(20),
+                                                borderSide: BorderSide(
+                                                    color: Colors.blue))),
                                       ),
                                       SizedBox(
-                                        height: 10.0,
+                                        height: 40.0,
                                       ),
                                       TextFormField(
                                         validator: (val) => val.isEmpty
@@ -131,10 +138,17 @@ class _RegisterState extends State<Register> {
                                             hintText: 'Enter your email',
                                             hintStyle:
                                                 TextStyle(color: Colors.grey),
-                                            border: InputBorder.none),
+                                            labelText: 'Email',
+                                            floatingLabelBehavior:
+                                                FloatingLabelBehavior.always,
+                                            border: OutlineInputBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(20),
+                                                borderSide: BorderSide(
+                                                    color: Colors.blue))),
                                       ),
                                       SizedBox(
-                                        height: 10.0,
+                                        height: 40.0,
                                       ),
                                       TextFormField(
                                         validator: (val) => val.length < 6
@@ -148,10 +162,17 @@ class _RegisterState extends State<Register> {
                                             hintText: 'Enter your password',
                                             hintStyle:
                                                 TextStyle(color: Colors.grey),
-                                            border: InputBorder.none),
+                                            labelText: 'Password',
+                                            floatingLabelBehavior:
+                                                FloatingLabelBehavior.always,
+                                            border: OutlineInputBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(20),
+                                                borderSide: BorderSide(
+                                                    color: Colors.blue))),
                                       ),
                                       SizedBox(
-                                        height: 10.0,
+                                        height: 40.0,
                                       ),
                                       TextFormField(
                                         onChanged: (val) {
@@ -162,7 +183,14 @@ class _RegisterState extends State<Register> {
                                             hintText: 'Confirm password',
                                             hintStyle:
                                                 TextStyle(color: Colors.grey),
-                                            border: InputBorder.none),
+                                            labelText: 'Password Again',
+                                            floatingLabelBehavior:
+                                                FloatingLabelBehavior.always,
+                                            border: OutlineInputBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(20),
+                                                borderSide: BorderSide(
+                                                    color: Colors.blue))),
                                       ),
                                     ]),
                                   ),
