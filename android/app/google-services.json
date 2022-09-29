@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "56562963873",
+    "project_id": "recess-project-362613",
+    "storage_bucket": "recess-project-362613.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56562963873:android:7a467df806b57ca99267e0",
+        "android_client_info": {
+          "package_name": "com.proj.proj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56562963873-9cdsfuqeim6pb0ihr3ekkiu86d1jhesi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeF4pQcxTHFTRTnO7eo5O2zeWS8ubvUUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56562963873-9cdsfuqeim6pb0ihr3ekkiu86d1jhesi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
