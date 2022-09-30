@@ -70,15 +70,15 @@ class _HostelDetailsState extends State<HostelDetails> {
       appBar: AppBar(
         title: Text('HOSTEL DETAILS'),
         centerTitle: true,
-        actions: <Widget>[
-          ElevatedButton.icon(
-            icon: Icon(Icons.person),
-            label: Text('Logout'),
-            onPressed: () async {
-              await _auth.signOut();
-            },
-          )
-        ],
+        // actions: <Widget>[
+        //   ElevatedButton.icon(
+        //     icon: Icon(Icons.person),
+        //     label: Text('Logout'),
+        //     onPressed: () async {
+        //       await _auth.signOut();
+        //     },
+        //   )
+        // ],
       ),
       body: SingleChildScrollView(
         child: Container(

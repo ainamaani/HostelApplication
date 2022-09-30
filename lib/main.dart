@@ -12,6 +12,7 @@ import 'package:proj/sreens/hostels.dart';
 import 'package:proj/sreens/hostelsdetails.dart';
 import 'package:proj/sreens/login.dart';
 import 'package:proj/sreens/register.dart';
+import 'package:proj/sreens/sucess.dart';
 import 'package:proj/sreens/voice.dart';
 import 'package:proj/sreens/welcomepage.dart';
 import 'package:proj/sreens/wrapper.dart';
@@ -55,8 +56,9 @@ class MyApp extends StatelessWidget {
             '/welcome': (context) => Welcome(),
             '/hostels': (context) => Hostels(),
             '/wrapper': (context) => Wrapper(),
-            '/': (context) => HostelInfo(),
-            '/voice': (context) => VoicePage()
+            '/hostelinfo': (context) => HostelInfo(),
+            '/voice': (context) => VoicePage(),
+            '/': (context) => SuccessScreen()
           },
         ),
       ),
