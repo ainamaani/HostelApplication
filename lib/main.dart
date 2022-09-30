@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.blue,
           ),
           routes: {
-            '/': (context) => Login(),
+            '/login': (context) => Login(),
             '/locationscreen': (context) => LocationScreen(),
             '/register': (context) => Register(),
             '/hosteldetails': (context) => HostelDetails(),
@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
             '/welcome': (context) => Welcome(),
             '/hostels': (context) => Hostels(),
             '/wrapper': (context) => Wrapper(),
-            '/hostelinfo': (context) => HostelInfo(),
+            '/': (context) => HostelInfo(),
             '/voice': (context) => VoicePage()
           },
         ),
