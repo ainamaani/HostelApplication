@@ -47,10 +47,10 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.blue,
           ),
           routes: {
-            '/login': (context) => Login(),
+            '/': (context) => Login(),
             '/locationscreen': (context) => LocationScreen(),
             '/register': (context) => Register(),
-            '/': (context) => HostelDetails(),
+            '/hosteldetails': (context) => HostelDetails(),
             '/welcomepage': (context) => WelcomePage(),
             '/welcome': (context) => Welcome(),
             '/hostels': (context) => Hostels(),
