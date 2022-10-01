@@ -18,8 +18,8 @@ class _WelcomePageState extends State<WelcomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    // Future.delayed(Duration(seconds: 7)).then((value) => Navigator.of(context)
-    //     .pushReplacement(MaterialPageRoute(builder: (context) => Welcome())));
+    Future.delayed(Duration(seconds: 7)).then((value) => Navigator.of(context)
+        .pushReplacement(MaterialPageRoute(builder: (context) => Welcome())));
   }
 
   @override

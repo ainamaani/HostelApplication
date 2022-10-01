@@ -23,7 +23,7 @@ class _WelcomeState extends State<Welcome> {
     // TODO: implement initState
     super.initState();
     timer = Timer.periodic(Duration(seconds: 6), (time) {
-      Future.delayed(Duration(seconds: 7)).then((value) => Navigator.of(context)
+      Future.delayed(Duration(seconds: 3)).then((value) => Navigator.of(context)
           .pushReplacement(
               MaterialPageRoute(builder: (context) => VoicePage())));
     });
