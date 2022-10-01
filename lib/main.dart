@@ -49,10 +49,10 @@ class MyApp extends StatelessWidget {
           ),
           routes: {
             '/login': (context) => Login(),
-            '/': (context) => LocationScreen(),
+            '/locationscreen': (context) => LocationScreen(),
             '/register': (context) => Register(),
             '/hosteldetails': (context) => HostelDetails(),
-            '/welcomepage': (context) => WelcomePage(),
+            '/': (context) => WelcomePage(),
             '/welcome': (context) => Welcome(),
             '/hostels': (context) => Hostels(),
             '/wrapper': (context) => Wrapper(),
