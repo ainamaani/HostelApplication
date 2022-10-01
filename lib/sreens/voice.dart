@@ -33,7 +33,10 @@ class _VoicePageState extends State<VoicePage> {
             Positioned(
               left: 10,
               child: ElevatedButton(
-                child: Text('Kikoni'),
+                child: Text(
+                  'Kikoni',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                ),
                 style: ElevatedButton.styleFrom(
                     minimumSize: Size(150, 150), backgroundColor: Colors.cyan),
                 onPressed: () {
@@ -48,8 +51,12 @@ class _VoicePageState extends State<VoicePage> {
               bottom: 0,
               left: 10,
               child: ElevatedButton(
-                child: Text('Wandegeya'),
-                style: ElevatedButton.styleFrom(minimumSize: Size(150, 150)),
+                child: Text(
+                  'Wandegeya',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                ),
+                style: ElevatedButton.styleFrom(
+                    minimumSize: Size(150, 150), backgroundColor: Colors.cyan),
                 onPressed: () {
                   flutterTts.speak(
                       'Wandegeya hostels, There is Aryan Hostel which is located along Nkiizi road');
@@ -60,8 +67,12 @@ class _VoicePageState extends State<VoicePage> {
               bottom: 0,
               right: 0,
               child: ElevatedButton(
-                child: Text('Kikumi Kikumi'),
-                style: ElevatedButton.styleFrom(minimumSize: Size(150, 150)),
+                child: Text(
+                  'Kikumi Kikumi',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                ),
+                style: ElevatedButton.styleFrom(
+                    minimumSize: Size(150, 150), backgroundColor: Colors.cyan),
                 onPressed: () {
                   flutterTts.speak('Kikumi kikumi hostels');
                 },
@@ -71,8 +82,12 @@ class _VoicePageState extends State<VoicePage> {
               top: 0,
               right: 0,
               child: ElevatedButton(
-                child: Text('Nankulabye lights'),
-                style: ElevatedButton.styleFrom(minimumSize: Size(150, 150)),
+                child: Text(
+                  'Nankulabye lights',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                ),
+                style: ElevatedButton.styleFrom(
+                    minimumSize: Size(150, 150), backgroundColor: Colors.cyan),
                 onPressed: () {
                   flutterTts.speak('Nankulabye hostels');
                 },

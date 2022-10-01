@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
           ),
           routes: {
             '/login': (context) => Login(),
-            '/locationscreen': (context) => LocationScreen(),
+            '/': (context) => LocationScreen(),
             '/register': (context) => Register(),
             '/hosteldetails': (context) => HostelDetails(),
             '/welcomepage': (context) => WelcomePage(),
@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
             '/wrapper': (context) => Wrapper(),
             '/hostelinfo': (context) => HostelInfo(),
             '/voice': (context) => VoicePage(),
-            '/': (context) => SuccessScreen()
+            '/successscreen': (context) => SuccessScreen()
           },
         ),
       ),

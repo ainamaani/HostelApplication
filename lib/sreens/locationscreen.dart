@@ -29,7 +29,7 @@ class _LocationScreenState extends State<LocationScreen> {
         : Scaffold(
             body: (applicationBloc.currentLocation == null)
                 ? Center(
-                    child: CircularProgressIndicator(),
+                    child: Loading(),
                   )
                 : ListView(
                     children: [
@@ -46,7 +46,7 @@ class _LocationScreenState extends State<LocationScreen> {
                                 zoom: 14),
                           ),
                           Positioned(
-                            bottom: 0,
+                            top: 30,
                             child: GestureDetector(
                               onTap: () {
                                 launchUrl(
@@ -54,16 +54,21 @@ class _LocationScreenState extends State<LocationScreen> {
                                 setState(() => loading = true);
                               },
                               child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(40),
+                                  color: Colors.white,
+                                ),
                                 padding: const EdgeInsets.all(15),
                                 width: MediaQuery.of(context).size.width,
-                                color: Colors.lightBlue,
                                 child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Icon(Icons.location_on),
+                                    SizedBox(
+                                      width: 5,
+                                    ),
                                     Text(
-                                      'Search hostel',
+                                      'Search hostel and directions',
                                       style: TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.bold),
