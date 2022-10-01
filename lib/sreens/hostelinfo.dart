@@ -65,6 +65,7 @@ import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:proj/shared/loading.dart';
 
 class HostelInfo extends StatefulWidget {
   @override
@@ -72,6 +73,7 @@ class HostelInfo extends StatefulWidget {
 }
 
 class _HostelInfoState extends State<HostelInfo> {
+  bool loading = false;
   final Stream<QuerySnapshot> _usersStream =
       FirebaseFirestore.instance.collection('hostels').snapshots();
 
@@ -85,13 +87,15 @@ class _HostelInfoState extends State<HostelInfo> {
         }
 
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return Text("Loading");
+          return Loading();
         }
 
         return Scaffold(
+          backgroundColor: Colors.cyan,
           appBar: AppBar(
             title: Text('HOSTEL DETAILS'),
             centerTitle: true,
+            backgroundColor: Colors.cyan,
           ),
           body: ListView(
             children: snapshot.data.docs.map((DocumentSnapshot document) {
@@ -100,6 +104,7 @@ class _HostelInfoState extends State<HostelInfo> {
               return Padding(
                 padding: const EdgeInsets.all(15),
                 child: Card(
+                  color: Colors.cyan[100],
                   clipBehavior: Clip.antiAlias,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(24),

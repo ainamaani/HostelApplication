@@ -31,15 +31,17 @@ class _RegisterState extends State<Register> {
             resizeToAvoidBottomInset: true,
             appBar: AppBar(
               title: Text('REGISTER'),
-              actions: <Widget>[
-                ElevatedButton.icon(
-                  icon: Icon(Icons.person),
-                  label: Text('Login'),
-                  onPressed: () {
-                    widget.toggleView();
-                  },
-                )
-              ],
+              centerTitle: true,
+              // actions: <Widget>[
+              //   ElevatedButton.icon(
+              //     icon: Icon(Icons.person),
+              //     label: Text('Login'),
+              //     onPressed: () {
+              //       widget.toggleView();
+              //     },
+              //   )
+              // ],
+              backgroundColor: Colors.cyan,
             ),
             body: SingleChildScrollView(
               child: Container(
@@ -219,6 +221,31 @@ class _RegisterState extends State<Register> {
                               ),
                               SizedBox(
                                 height: 40,
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    'Already have an account?',
+                                    style: TextStyle(color: Colors.grey),
+                                  ),
+                                  SizedBox(
+                                    width: 20,
+                                  ),
+                                  ElevatedButton(
+                                    child: Text(
+                                      'Login',
+                                      style: TextStyle(color: Colors.cyan),
+                                    ),
+                                    onPressed: () {
+                                      widget.toggleView();
+                                    },
+                                    style: ElevatedButton.styleFrom(
+                                        backgroundColor: Colors.white),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                height: 30,
                               ),
                               GestureDetector(
                                 child: Container(

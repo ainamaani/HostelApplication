@@ -18,13 +18,14 @@ class _SuccessScreenState extends State<SuccessScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.cyan[300],
       appBar: AppBar(
         title: Text(
-          'STATUS',
+          'DETAILS STATUS',
           style: TextStyle(),
         ),
         centerTitle: true,
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.cyan,
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(10, 150, 10, 150),
@@ -56,7 +57,8 @@ class _SuccessScreenState extends State<SuccessScreen> {
               ),
               ElevatedButton(
                 child: Text('LOGOUT'),
-                style: ElevatedButton.styleFrom(minimumSize: Size(60, 50)),
+                style: ElevatedButton.styleFrom(
+                    minimumSize: Size(60, 50), backgroundColor: Colors.cyan),
                 onPressed: () async {
                   await _auth.signOut();
                 },

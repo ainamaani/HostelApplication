@@ -30,15 +30,17 @@ class _LoginState extends State<Login> {
             resizeToAvoidBottomInset: true,
             appBar: AppBar(
               title: Text('LOG IN'),
-              actions: <Widget>[
-                ElevatedButton.icon(
-                  icon: Icon(Icons.person),
-                  label: Text('Register'),
-                  onPressed: () {
-                    widget.toggleView();
-                  },
-                )
-              ],
+              centerTitle: true,
+              // actions: <Widget>[
+              //   ElevatedButton.icon(
+              //     icon: Icon(Icons.person),
+              //     label: Text('Register'),
+              //     onPressed: () {
+              //       widget.toggleView();
+              //     },
+              //   )
+              // ],
+              backgroundColor: Colors.cyan,
             ),
             body: Container(
               width: double.infinity,
@@ -166,9 +168,27 @@ class _LoginState extends State<Login> {
                             SizedBox(
                               height: 40,
                             ),
-                            Text(
-                              'Forgot Password',
-                              style: TextStyle(color: Colors.grey),
+                            Row(
+                              children: [
+                                Text(
+                                  "Don't have an account?",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                ElevatedButton(
+                                  child: Text(
+                                    'Register',
+                                    style: TextStyle(color: Colors.cyan),
+                                  ),
+                                  onPressed: () {
+                                    widget.toggleView();
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                      backgroundColor: Colors.white),
+                                )
+                              ],
                             ),
                             SizedBox(
                               height: 40,

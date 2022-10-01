@@ -34,7 +34,8 @@ class _VoicePageState extends State<VoicePage> {
               left: 10,
               child: ElevatedButton(
                 child: Text('Kikoni'),
-                style: ElevatedButton.styleFrom(minimumSize: Size(150, 150)),
+                style: ElevatedButton.styleFrom(
+                    minimumSize: Size(150, 150), backgroundColor: Colors.cyan),
                 onPressed: () {
                   flutterTts.setPitch(1);
                   flutterTts.setSpeechRate(0.5);
