@@ -456,6 +456,8 @@ class _HostelDetailsState extends State<HostelDetails> {
                                   ),
                                   onTap: () {
                                     update();
+                                    Navigator.pushNamed(
+                                        context, '/updatesuccessscreen');
                                     // _hostelnameController.clear();
                                     // _singleroomsController.clear();
                                     // _pricesingleroomController.clear();

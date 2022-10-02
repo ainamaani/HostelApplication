@@ -13,6 +13,7 @@ import 'package:proj/sreens/hostelsdetails.dart';
 import 'package:proj/sreens/login.dart';
 import 'package:proj/sreens/register.dart';
 import 'package:proj/sreens/success.dart';
+import 'package:proj/sreens/updatesuccess.dart';
 import 'package:proj/sreens/voice.dart';
 import 'package:proj/sreens/welcomepage.dart';
 import 'package:proj/sreens/wrapper.dart';
@@ -52,13 +53,14 @@ class MyApp extends StatelessWidget {
             '/locationscreen': (context) => LocationScreen(),
             '/register': (context) => Register(),
             '/hosteldetails': (context) => HostelDetails(),
-            '/welcomepage': (context) => WelcomePage(),
+            '/': (context) => WelcomePage(),
             '/welcome': (context) => Welcome(),
             '/hostels': (context) => Hostels(),
             '/wrapper': (context) => Wrapper(),
-            '/': (context) => HostelInfo(),
+            '/details': (context) => HostelInfo(),
             '/voice': (context) => VoicePage(),
             '/successscreen': (context) => SuccessScreen(),
+            '/updatesuccessscreen': (context) => UpdateSuccessScreen()
           },
         ),
       ),
