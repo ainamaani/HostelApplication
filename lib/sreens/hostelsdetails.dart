@@ -73,17 +73,19 @@ class _HostelDetailsState extends State<HostelDetails> {
             resizeToAvoidBottomInset: true,
             appBar: AppBar(
               title: Text('HOSTEL DETAILS'),
-              centerTitle: true,
+              // centerTitle: true,
               backgroundColor: Colors.cyan,
-              // actions: <Widget>[
-              //   ElevatedButton.icon(
-              //     icon: Icon(Icons.person),
-              //     label: Text('Logout'),
-              //     onPressed: () async {
-              //       await _auth.signOut();
-              //     },
-              //   )
-              // ],
+              actions: <Widget>[
+                ElevatedButton(
+                  // child: Icon(Icons.person),
+
+                  child: Text('Logout'),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.cyan),
+                  onPressed: () async {
+                    await _auth.signOut();
+                  },
+                )
+              ],
             ),
             body: SingleChildScrollView(
               child: Container(
@@ -415,19 +417,19 @@ class _HostelDetailsState extends State<HostelDetails> {
                                   ),
                                   onTap: () async {
                                     create();
-                                    _hostelnameController.clear();
-                                    _singleroomsController.clear();
-                                    _pricesingleroomController.clear();
-                                    _bookingfeedoubleController.clear();
-                                    _doubleroomsController.clear();
-                                    _pricedoubleroomController.clear();
-                                    _bookingfeedoubleController.clear();
-                                    _servicesofferedController.clear();
-                                    _contactsController.clear();
+                                    // _hostelnameController.clear();
+                                    // _singleroomsController.clear();
+                                    // _pricesingleroomController.clear();
+                                    // _bookingfeedoubleController.clear();
+                                    // _doubleroomsController.clear();
+                                    // _pricedoubleroomController.clear();
+                                    // _bookingfeedoubleController.clear();
+                                    // _servicesofferedController.clear();
+                                    // _contactsController.clear();
 
                                     Navigator.pushNamed(
                                         context, '/successscreen');
-                                    setState(() => loading = true);
+                                    // setState(() => loading = true);
                                   },
                                 ),
                                 SizedBox(
@@ -454,17 +456,17 @@ class _HostelDetailsState extends State<HostelDetails> {
                                   ),
                                   onTap: () {
                                     update();
-                                    _hostelnameController.clear();
-                                    _singleroomsController.clear();
-                                    _pricesingleroomController.clear();
-                                    _bookingfeedoubleController.clear();
-                                    _doubleroomsController.clear();
-                                    _pricedoubleroomController.clear();
-                                    _bookingfeedoubleController.clear();
-                                    _servicesofferedController.clear();
-                                    _contactsController.clear();
+                                    // _hostelnameController.clear();
+                                    // _singleroomsController.clear();
+                                    // _pricesingleroomController.clear();
+                                    // _bookingfeedoubleController.clear();
+                                    // _doubleroomsController.clear();
+                                    // _pricedoubleroomController.clear();
+                                    // _bookingfeedoubleController.clear();
+                                    // _servicesofferedController.clear();
+                                    // _contactsController.clear();
 
-                                    setState(() => loading = true);
+                                    // setState(() => loading = true);
                                   },
                                 )
                               ],

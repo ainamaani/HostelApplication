@@ -25,6 +25,7 @@ class _HostelsState extends State<Hostels> {
             appBar: AppBar(
               title: Text('HOSTELS'),
               centerTitle: true,
+              backgroundColor: Colors.cyan,
             ),
             body: ListView(children: [
               SingleChildScrollView(
@@ -59,33 +60,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () async {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -121,33 +116,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -183,33 +172,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -245,33 +228,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -307,33 +284,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -369,33 +340,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -431,33 +396,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -493,33 +452,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -555,33 +508,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -617,33 +564,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -679,33 +620,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -741,33 +676,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -803,33 +732,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -865,33 +788,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -927,33 +844,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -989,33 +900,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -1051,33 +956,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -1114,33 +1013,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -1176,33 +1069,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -1238,33 +1125,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -1300,33 +1181,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -1362,33 +1237,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )
@@ -1424,33 +1293,27 @@ class _HostelsState extends State<Hostels> {
                             children: [
                               ElevatedButton(
                                 child: Text('View details'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/details');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               ),
                               SizedBox(
                                 width: 20,
                               ),
                               ElevatedButton(
                                 child: Text('Location'),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(40, 45),
+                                    backgroundColor: Colors.cyan),
                                 onPressed: () {
                                   Navigator.pushNamed(
                                       context, '/locationscreen');
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
-                                style: ButtonStyle(
-                                    shape: MaterialStateProperty.all<
-                                            RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(18.0)))),
                               )
                             ],
                           )

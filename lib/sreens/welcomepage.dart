@@ -71,7 +71,7 @@ class _WelcomeState extends State<Welcome> {
                         ),
                         Center(
                           child: Text(
-                            'Welcome to proj',
+                            'Welcome to HostelApp',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 18,
