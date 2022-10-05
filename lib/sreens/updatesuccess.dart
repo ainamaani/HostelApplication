@@ -55,20 +55,6 @@ class _UpdateSuccessScreenState extends State<UpdateSuccessScreen> {
               SizedBox(
                 height: 50,
               ),
-              // ElevatedButton(
-              //   child: Text('LOGOUT'),
-              //   style: ElevatedButton.styleFrom(
-              //       minimumSize: Size(60, 50), backgroundColor: Colors.cyan),
-
-              //   onPressed: () async {
-              //     await _auth.signOut();
-              //   },
-              //   // style: ButtonStyle(
-
-              //   //     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-              //   //         RoundedRectangleBorder(
-              //   //             borderRadius: BorderRadius.circular(18.0)))),
-              // )
             ],
           ),
         ),

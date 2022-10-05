@@ -119,7 +119,7 @@ class _WelcomeState extends State<Welcome> {
                                 onTap: () {
                                   Navigator.pushNamed(context, '/wrapper');
                                   timer.cancel();
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
                                 child: Text(
                                   'Use App as custodian',
@@ -146,7 +146,7 @@ class _WelcomeState extends State<Welcome> {
                                 onTap: () {
                                   Navigator.pushNamed(context, '/hostels');
                                   timer.cancel();
-                                  setState(() => loading = true);
+                                  // setState(() => loading = true);
                                 },
                                 child: Text(
                                   'Use App as guest/student',
