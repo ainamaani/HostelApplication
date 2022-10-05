@@ -39,12 +39,12 @@ class _VoicePageState extends State<VoicePage> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                 ),
                 style: ElevatedButton.styleFrom(
-                    minimumSize: Size(150, 150), backgroundColor: Colors.cyan),
+                    minimumSize: Size(150, 150), backgroundColor: Colors.white),
                 onPressed: () {
                   flutterTts.setPitch(1);
                   flutterTts.setSpeechRate(0.5);
                   flutterTts.speak(
-                      'Kikoni hostels.There is Dream world hostel which is nice i can assure you');
+                      "Kikoni hostels.In Kikoni,there are quite many and nice hostels.Hostel one,Olympia hostel.This is a mixed hostel located in Makerere Kikoni with both single and double rooms.All their rooms are self contained.A single room per semester costs two point two million shillings and a double room goes up to one point one million shillings.This hostel offered really high quality services and among these include,a big parking,armed guards for security,a hostel shuttle,a saloon,a swimming pool and paid Wifi.If interested,the custodian's contact is 0700861253");
                 },
               ),
             ),
@@ -57,10 +57,10 @@ class _VoicePageState extends State<VoicePage> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                 ),
                 style: ElevatedButton.styleFrom(
-                    minimumSize: Size(150, 150), backgroundColor: Colors.cyan),
+                    minimumSize: Size(150, 150), backgroundColor: Colors.white),
                 onPressed: () {
                   flutterTts.speak(
-                      'Wandegeya hostels, There is Aryan Hostel which is located along Nkiizi road');
+                      "Hostels located in Wandegeya,Hostel one,Aryan Hostel.This is a mixed hostel located along Nkiizi Road.It has both self contained and afew rooms which are not self contained.A single room goes up to one point eight million shillings,a double room goes up to nine hundred fifty thousand shillings whereas a triple room goes up to six hundred fifty shillings.Services offered at the hostel include a large parking space,a hostel shuttle,a gym to mention but a few.The custodian's contact is 0772431733");
                 },
               ),
             ),

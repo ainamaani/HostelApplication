@@ -32,15 +32,6 @@ class _RegisterState extends State<Register> {
             appBar: AppBar(
               title: Text('REGISTER'),
               centerTitle: true,
-              // actions: <Widget>[
-              //   ElevatedButton.icon(
-              //     icon: Icon(Icons.person),
-              //     label: Text('Login'),
-              //     onPressed: () {
-              //       widget.toggleView();
-              //     },
-              //   )
-              // ],
               backgroundColor: Colors.cyan,
             ),
             body: SingleChildScrollView(
