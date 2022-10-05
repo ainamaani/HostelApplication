@@ -20,7 +20,8 @@ class _VoicePageState extends State<VoicePage> {
   }
 
   void welcomeMessage() {
-    flutterTts.speak('Welcome');
+    flutterTts.speak(
+        'Welcome to the Makerere Hostel Application.Now listen carefully,to find details about hostels in Kikoni,tap in the top left corner of your screen.For details about Hostels in Wandegeya,tap in the bottom left corner of your screen.For details about hostels located in Kikumi Kikumi,tap in the right bottom corner of the screen.Thank you ');
   }
 
   FlutterTts flutterTts = FlutterTts();
