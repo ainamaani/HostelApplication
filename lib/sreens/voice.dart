@@ -36,7 +36,10 @@ class _VoicePageState extends State<VoicePage> {
               child: ElevatedButton(
                 child: Text(
                   'Kikoni',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                      color: Colors.black),
                 ),
                 style: ElevatedButton.styleFrom(
                     minimumSize: Size(150, 150), backgroundColor: Colors.white),
@@ -54,11 +57,16 @@ class _VoicePageState extends State<VoicePage> {
               child: ElevatedButton(
                 child: Text(
                   'Wandegeya',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                      color: Colors.black),
                 ),
                 style: ElevatedButton.styleFrom(
                     minimumSize: Size(150, 150), backgroundColor: Colors.white),
                 onPressed: () {
+                  flutterTts.setPitch(1);
+                  flutterTts.setSpeechRate(0.5);
                   flutterTts.speak(
                       "Hostels located in Wandegeya,Hostel one,Aryan Hostel.This is a mixed hostel located along Nkiizi Road.It has both self contained, and afew rooms which are not self contained.A single room goes up to one point eight million shillings,a double room goes up to nine hundred fifty thousand shillings, whereas a triple room goes up to six hundred fifty shillings.Services offered at the hostel include a large parking space,a hostel shuttle,a gym to mention but a few.The custodian's contact is 0,7,7,2,4,3,1,7,3,3");
                 },
@@ -70,11 +78,16 @@ class _VoicePageState extends State<VoicePage> {
               child: ElevatedButton(
                 child: Text(
                   'Kikumi Kikumi',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                      color: Colors.black),
                 ),
                 style: ElevatedButton.styleFrom(
-                    minimumSize: Size(150, 150), backgroundColor: Colors.cyan),
+                    minimumSize: Size(150, 150), backgroundColor: Colors.white),
                 onPressed: () {
+                  flutterTts.setPitch(1);
+                  flutterTts.setSpeechRate(0.5);
                   flutterTts.speak('Kikumi kikumi hostels');
                 },
               ),
@@ -84,12 +97,17 @@ class _VoicePageState extends State<VoicePage> {
               right: 0,
               child: ElevatedButton(
                 child: Text(
-                  'Nankulabye lights',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                  'Makerere road',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                      color: Colors.black),
                 ),
                 style: ElevatedButton.styleFrom(
-                    minimumSize: Size(150, 150), backgroundColor: Colors.cyan),
+                    minimumSize: Size(150, 150), backgroundColor: Colors.white),
                 onPressed: () {
+                  flutterTts.setPitch(1);
+                  flutterTts.setSpeechRate(0.5);
                   flutterTts.speak('Nankulabye hostels');
                 },
               ),
