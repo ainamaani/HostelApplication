@@ -168,9 +168,6 @@ class _HostelDetailsState extends State<HostelDetails> {
                                                   BorderRadius.circular(20),
                                               borderSide: BorderSide(
                                                   color: Colors.blue))),
-                                      // onChanged: ((value) {
-                                      //   hostelProvider.changeHostelname(value);
-                                      // }),
                                     ),
                                   ),
                                   Container(
@@ -194,9 +191,6 @@ class _HostelDetailsState extends State<HostelDetails> {
                                                   BorderRadius.circular(20),
                                               borderSide: BorderSide(
                                                   color: Colors.blue))),
-                                      // onChanged: (value) {
-                                      //   hostelProvider.changeSinglerooms(value);
-                                      // },
                                     ),
                                   ),
                                   Container(
@@ -219,10 +213,6 @@ class _HostelDetailsState extends State<HostelDetails> {
                                                   BorderRadius.circular(20),
                                               borderSide: BorderSide(
                                                   color: Colors.blue))),
-                                      // onChanged: (value) {
-                                      //   hostelProvider
-                                      //       .changePricesingleroom(value);
-                                      // },
                                     ),
                                   ),
                                   Container(
@@ -247,10 +237,6 @@ class _HostelDetailsState extends State<HostelDetails> {
                                                   BorderRadius.circular(20),
                                               borderSide: BorderSide(
                                                   color: Colors.blue))),
-                                      // onChanged: (value) {
-                                      //   hostelProvider
-                                      //       .changeBookingfeesingle(value);
-                                      // },
                                     ),
                                   ),
                                   Container(
@@ -274,9 +260,6 @@ class _HostelDetailsState extends State<HostelDetails> {
                                                   BorderRadius.circular(20),
                                               borderSide: BorderSide(
                                                   color: Colors.blue))),
-                                      // onChanged: (value) {
-                                      //   hostelProvider.changeDoublerooms(value);
-                                      // },
                                     ),
                                   ),
                                   Container(
@@ -299,10 +282,6 @@ class _HostelDetailsState extends State<HostelDetails> {
                                                   BorderRadius.circular(20),
                                               borderSide: BorderSide(
                                                   color: Colors.blue))),
-                                      // onChanged: (value) {
-                                      //   hostelProvider
-                                      //       .changePricedoubleroom(value);
-                                      // },
                                     ),
                                   ),
                                   Container(
@@ -326,10 +305,6 @@ class _HostelDetailsState extends State<HostelDetails> {
                                                   BorderRadius.circular(20),
                                               borderSide: BorderSide(
                                                   color: Colors.blue))),
-                                      // onChanged: (value) {
-                                      //   hostelProvider
-                                      //       .changeBookingfeedouble(value);
-                                      // },
                                     ),
                                   ),
                                   Container(
@@ -353,10 +328,6 @@ class _HostelDetailsState extends State<HostelDetails> {
                                                   BorderRadius.circular(20),
                                               borderSide: BorderSide(
                                                   color: Colors.blue))),
-                                      // onChanged: (value) {
-                                      //   hostelProvider
-                                      //       .changeServicesoffered(value);
-                                      // },
                                     ),
                                   ),
                                   Container(
@@ -380,9 +351,6 @@ class _HostelDetailsState extends State<HostelDetails> {
                                                   BorderRadius.circular(20),
                                               borderSide: BorderSide(
                                                   color: Colors.blue))),
-                                      // onChanged: (value) {
-                                      //   hostelProvider.changeContacts(value);
-                                      // },
                                     ),
                                   ),
                                 ],
@@ -415,15 +383,6 @@ class _HostelDetailsState extends State<HostelDetails> {
                                   ),
                                   onTap: () async {
                                     create();
-                                    // _hostelnameController.clear();
-                                    // _singleroomsController.clear();
-                                    // _pricesingleroomController.clear();
-                                    // _bookingfeedoubleController.clear();
-                                    // _doubleroomsController.clear();
-                                    // _pricedoubleroomController.clear();
-                                    // _bookingfeedoubleController.clear();
-                                    // _servicesofferedController.clear();
-                                    // _contactsController.clear();
 
                                     Navigator.pushNamed(
                                         context, '/successscreen');
@@ -456,52 +415,10 @@ class _HostelDetailsState extends State<HostelDetails> {
                                     update();
                                     Navigator.pushNamed(
                                         context, '/updatesuccessscreen');
-                                    // _hostelnameController.clear();
-                                    // _singleroomsController.clear();
-                                    // _pricesingleroomController.clear();
-                                    // _bookingfeedoubleController.clear();
-                                    // _doubleroomsController.clear();
-                                    // _pricedoubleroomController.clear();
-                                    // _bookingfeedoubleController.clear();
-                                    // _servicesofferedController.clear();
-                                    // _contactsController.clear();
-
-                                    // setState(() => loading = true);
                                   },
                                 )
                               ],
                             ),
-                            // GestureDetector(
-                            //   child: Container(
-                            //     height: 50,
-                            //     margin: EdgeInsets.symmetric(horizontal: 50),
-                            //     decoration: BoxDecoration(
-                            //       color: Colors.cyan[500],
-                            //       borderRadius: BorderRadius.circular(10),
-                            //     ),
-                            //     child: Center(
-                            //       child: Text(
-                            //         'Update details',
-                            //         style: TextStyle(
-                            //             color: Colors.white,
-                            //             fontSize: 15,
-                            //             fontWeight: FontWeight.bold),
-                            //       ),
-                            //     ),
-                            //   ),
-                            //   onTap: () {
-                            //     update();
-                            //     _hostelnameController.clear();
-                            //     _singleroomsController.clear();
-                            //     _pricesingleroomController.clear();
-                            //     _bookingfeedoubleController.clear();
-                            //     _doubleroomsController.clear();
-                            //     _pricedoubleroomController.clear();
-                            //     _bookingfeedoubleController.clear();
-                            //     _servicesofferedController.clear();
-                            //     _contactsController.clear();
-                            //   },
-                            // )
                           ],
                         ),
                       ),
