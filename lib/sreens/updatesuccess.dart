@@ -28,7 +28,7 @@ class _UpdateSuccessScreenState extends State<UpdateSuccessScreen> {
         backgroundColor: Colors.cyan,
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(10, 150, 10, 150),
+        padding: const EdgeInsets.fromLTRB(10, 150, 10, 250),
         child: Card(
           clipBehavior: Clip.antiAlias,
           shape: RoundedRectangleBorder(
