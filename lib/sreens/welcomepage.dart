@@ -4,6 +4,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:proj/sreens/voice.dart';
 
 import '../shared/loading.dart';
@@ -22,11 +23,17 @@ class _WelcomeState extends State<Welcome> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    welcomeMessage();
     timer = Timer.periodic(Duration(seconds: 6), (time) {
-      Future.delayed(Duration(seconds: 3)).then((value) => Navigator.of(context)
+      Future.delayed(Duration(seconds: 6)).then((value) => Navigator.of(context)
           .pushReplacement(
               MaterialPageRoute(builder: (context) => VoicePage())));
     });
+  }
+
+  void welcomeMessage() {
+    flutterTts.speak(
+        'Welcome to the Makerere Hostel Application.Please select which app user you are before 6 seconds elapse,for the blind,hold on and do not tap anywhere,as you will redirected to your page.Thank you');
   }
 
   @override
@@ -36,6 +43,7 @@ class _WelcomeState extends State<Welcome> {
     super.dispose();
   }
 
+  FlutterTts flutterTts = FlutterTts();
   @override
   Widget build(BuildContext context) {
     return loading

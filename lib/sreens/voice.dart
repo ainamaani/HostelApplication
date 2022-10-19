@@ -3,6 +3,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class VoicePage extends StatefulWidget {
   const VoicePage({Key key}) : super(key: key);
@@ -21,7 +22,7 @@ class _VoicePageState extends State<VoicePage> {
 
   void welcomeMessage() {
     flutterTts.speak(
-        'Welcome to the Makerere Hostel Application.Now listen carefully,to find details about hostels in Kikoni,tap in the top left corner of your screen.For details about Hostels in Wandegeya,tap in the bottom left corner of your screen.For details about hostels located in Kikumi Kikumi,tap in the right bottom corner of the screen.Thank you ');
+        'Welcome once again.Now listen carefully,to find details about hostels in Kikoni,tap in the top left corner of your screen,i repeat,to find details about hostels in Kikoni,tap in the top left corner of your screen.For details about Hostels in Wandegeya,tap in the bottom left corner of your screen,For details about Hostels in Wandegeya,tap in the bottom left corner of your screen.For details about hostels located in Kikumi Kikumi,tap in the right bottom corner of the screen,For details about Kikumi kikumi hostels,tap in the right bottom corner of the screen.Thank you ');
   }
 
   FlutterTts flutterTts = FlutterTts();
@@ -47,7 +48,7 @@ class _VoicePageState extends State<VoicePage> {
                   flutterTts.setPitch(1);
                   flutterTts.setSpeechRate(0.5);
                   flutterTts.speak(
-                      "Kikoni hostels.In Kikoni,there are quite many and nice hostels.Hostel one,Olympia hostel.This is a mixed hostel located in Makerere Kikoni with both single and double rooms.All their rooms are self contained.A single room per semester costs two point two million shillings and a double room goes up to one point one million shillings.This hostel offers really high quality services and among these include,a big parking,armed guards for security,a hostel shuttle,a saloon,a swimming pool and paid Wifi.If interested,the custodian's contact is 0,7,0,0,8,6,1,2,5,3");
+                      "Kikoni hostels.In Kikoni,there are quite many and nice hostels.Hostel one,Olympia hostel.This is a mixed hostel located in Makerere Kikoni with both single and double rooms.All their rooms are self contained.A single room per semester costs two point two million shillings and a double room goes up to one point one million shillings.This hostel offers really high quality services and among these include,a big parking,armed guards for security,a hostel shuttle,a saloon,a swimming pool and paid Wifi.If interested,the custodian's contact is 0,7,0,0,8,6,1,2,5,3.Hostel two,Dream World hostel.This is a mixed hostel,with both single and double rooms,self contained and non self contained.A single room goes up to eight hundred and fifty thousand shillings,and nine hundred thousand shillings as well.Double rooms have varying prices as some are five hundred and fifty thousand shillings,some are six hundred and fifty thousand shillings, where as,some are seven hundred and fifty thousand shillings.The hostel has a shuttle,good security,a restaurant,etc.If interested,the custodian's contact is 0,7,7,6,2,8,6,0,1,2.Hostel three is Julianna hostel.This is a girls' hostel located in Makerere Kikoni opposite Olympia hostel.It has both single and double rooms.A single room goes up to one point two million shillings,a double room goes up to seven hundred and fifty thousand shillings.The hostel has big parking,a hostel shuttle,a prayer room.The custodian's contact is 0,7,0,1,7,2,1,6,9,8.Hostel four,Kann Hostel,This is a mixed hostel located in Makerere Kikoni.It has both single and double rooms,self contained and non self contained.A single room goes up to one point one million shillings,Double room prices vary from six hundred thousand to six hundred fifty thousand and to seven hundred thousand shillings as well.This hostel is conveniently very near the campus as it is just opposite Makerere Western gate.It has parking,a prayer room,a restaurant,etc.The custodian's contact is 0,7,5,6,3,0,9,0,7,8.Hostel five is Nakiyinji hostel.It is a mixed hostel located in Makerere Kikoni right next to JJ hostel.It is both single and double rooms,self contained and non self contained.A single room is one point four million shillings,doubles are seven hundred thousand shillings and others are nine hundred thousand shillings.The custodian's contact is 0,7,8,2,4,7,3,3,7,6.  ");
                 },
               ),
             ),
@@ -88,7 +89,8 @@ class _VoicePageState extends State<VoicePage> {
                 onPressed: () {
                   flutterTts.setPitch(1);
                   flutterTts.setSpeechRate(0.5);
-                  flutterTts.speak('Kikumi kikumi hostels');
+                  flutterTts.speak(
+                      "Hostels in kikumi kikumi.There is Paramount Hostel,This is a mixed hostel and it is quite affordable as well.Single rooms go up to one point two million,and double rooms go up to sixty hundred fifty thousand shillings.It is really near to campus as it is located just opposite the Makerere rugby grounds.If interested,the custodian's contact is 0,7,7,0,9,4,1,4,1,2");
                 },
               ),
             ),
@@ -110,6 +112,37 @@ class _VoicePageState extends State<VoicePage> {
                   flutterTts.setSpeechRate(0.5);
                   flutterTts.speak('Nankulabye hostels');
                 },
+              ),
+            ),
+            Positioned(
+              top: 320,
+              child: GestureDetector(
+                onTap: () {
+                  launchUrl(Uri.parse('https://www.google.ca/maps'));
+                  // setState(() => loading = true);
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(40),
+                    color: Colors.white,
+                  ),
+                  padding: const EdgeInsets.all(15),
+                  width: MediaQuery.of(context).size.width,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.location_on),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        'Search hostel and directions',
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
+                      )
+                    ],
+                  ),
+                ),
               ),
             )
           ],

@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:proj/blocs/Applicationblocs.dart';
 import 'package:proj/models/user.dart';
-// import 'package:proj/providers/hostelprovider.dart';
+import 'package:proj/providers/hostelprovider.dart';
 import 'package:proj/services/auth.dart';
 import 'package:proj/services/firestoreservice.dart';
 import 'package:proj/sreens/homepage.dart';
@@ -37,8 +37,8 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider<ApplicationBloc>(
             create: ((context) => ApplicationBloc())),
-        // ChangeNotifierProvider<HostelProvider>(
-        //     create: ((context) => HostelProvider())),
+        ChangeNotifierProvider<HostelProvider>(
+            create: ((context) => HostelProvider())),
         StreamProvider(create: ((context) => firestoreService.getHostels())),
       ],
       child: StreamProvider<Userr>.value(
@@ -50,10 +50,10 @@ class MyApp extends StatelessWidget {
           ),
           routes: {
             '/login': (context) => Login(),
-            '/locationscreen': (context) => LocationScreen(),
+            '/': (context) => LocationScreen(),
             '/register': (context) => Register(),
             '/hosteldetails': (context) => HostelDetails(),
-            '/': (context) => WelcomePage(),
+            '/welcomepage': (context) => WelcomePage(),
             '/welcome': (context) => Welcome(),
             '/hostels': (context) => Hostels(),
             '/wrapper': (context) => Wrapper(),
