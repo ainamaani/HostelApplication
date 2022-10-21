@@ -18,17 +18,18 @@ class _SuccessScreenState extends State<SuccessScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.cyan[300],
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
           'DETAILS STATUS',
           style: TextStyle(),
         ),
         centerTitle: true,
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.white,
+        foregroundColor: Color.fromARGB(255, 3, 94, 6),
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(10, 150, 10, 250),
+        padding: const EdgeInsets.fromLTRB(10, 150, 10, 200),
         child: Card(
           clipBehavior: Clip.antiAlias,
           shape: RoundedRectangleBorder(
@@ -49,7 +50,7 @@ class _SuccessScreenState extends State<SuccessScreen> {
               ),
               Icon(
                 Icons.check_circle_rounded,
-                size: 50,
+                size: 80,
                 color: Colors.green,
               ),
               SizedBox(

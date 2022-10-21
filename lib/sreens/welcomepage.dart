@@ -33,7 +33,7 @@ class _WelcomeState extends State<Welcome> {
 
   void welcomeMessage() {
     flutterTts.speak(
-        'Welcome to the Makerere Hostel Application.Please select which app user you are before 6 seconds elapse,for the blind,hold on and do not tap anywhere,as you will redirected to your page.Thank you');
+        'Welcome to the Makerere Hostel Application.Please select which app user you are, before 6 seconds elapse,for the blind,hold on and do not tap anywhere,as you will redirected to your page.Thank you');
   }
 
   @override
