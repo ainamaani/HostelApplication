@@ -44,6 +44,7 @@ class MyApp extends StatelessWidget {
       child: StreamProvider<Userr>.value(
         value: AuthService().user,
         child: MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'HostelApp',
           theme: ThemeData(
             primarySwatch: Colors.blue,

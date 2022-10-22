@@ -24,14 +24,16 @@ class _WelcomeState extends State<Welcome> {
     // TODO: implement initState
     super.initState();
     welcomeMessage();
-    timer = Timer.periodic(Duration(seconds: 6), (time) {
-      Future.delayed(Duration(seconds: 6)).then((value) => Navigator.of(context)
-          .pushReplacement(
+    timer = Timer.periodic(Duration(seconds: 11), (time) {
+      Future.delayed(Duration(seconds: 11)).then((value) =>
+          Navigator.of(context).pushReplacement(
               MaterialPageRoute(builder: (context) => VoicePage())));
     });
   }
 
   void welcomeMessage() {
+    flutterTts.setPitch(1);
+    flutterTts.setSpeechRate(0.4);
     flutterTts.speak(
         'Welcome to the Makerere Hostel Application.Please select which app user you are, before 6 seconds elapse,for the blind,hold on and do not tap anywhere,as you will redirected to your page.Thank you');
   }

@@ -51,7 +51,7 @@ class _LocationScreenState extends State<LocationScreen> {
                               onTap: () {
                                 launchUrl(
                                     Uri.parse('https://www.google.ca/maps'));
-                                setState(() => loading = true);
+                                // setState(() => loading = true);
                               },
                               child: Container(
                                 decoration: BoxDecoration(
